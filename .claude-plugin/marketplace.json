@@ -1,0 +1,25 @@
+{
+  "$schema": "https://claude-plugin-schema.anthropic.com/marketplace.json",
+  "name": "sm-skills",
+  "description": "雪山之巅 skill 集合",
+  "owner": {
+    "name": "snowmountain-top",
+    "email": "caohanchen@8848top.com"
+  },
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "develop",
+      "source": "./plugins/develop",
+      "description": "Development skills collection for Claude Code",
+      "version": "1.0.0",
+      "author": {
+        "name": "caohanchen",
+        "email": "caohanchen@8848top.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "tags": ["skills", "development"]
+    }
+  ]
+}
