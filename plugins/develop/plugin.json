@@ -1,0 +1,11 @@
+{
+  "$schema": "https://claude-plugin-schema.anthropic.com/plugin.json",
+  "name": "develop",
+  "version": "1.0.0",
+  "description": "Development skills collection for Claude Code",
+  "author": {
+    "name": "Somebody",
+    "email": "Somebody@8848top.com"
+  },
+  "license": "MIT"
+}
