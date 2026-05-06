@@ -207,7 +207,7 @@ jobs:
           echo "镜像标签: ${TAG}"
 
       - name: 登录镜像仓库
-        run: echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login -u "${{ secrets.REGISTRY_USERNAME }}" --password-stdin <镜像仓库域名>
+        run: echo "${{ secrets.TCR_PASSWORD }}" | docker login -u "${{ secrets.TCR_USERNAME }}" --password-stdin <镜像仓库域名>
 
       - name: 构建 Docker 镜像
         run: |
@@ -237,5 +237,5 @@ jobs:
 
 | Secret | 说明 |
 |--------|------|
-| `REGISTRY_USERNAME` | 镜像仓库用户名 |
-| `REGISTRY_PASSWORD` | 镜像仓库密码 |
+| `TCR_USERNAME` | 镜像仓库用户名 |
+| `TCR_PASSWORD` | 镜像仓库密码 |
